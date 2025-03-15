@@ -7,10 +7,10 @@ import java.awt.event.*;
 
 public class MahasiswaApp {
     public static void main(String[] args) {
-    showLoginForm();
+    LoginForm();
     }
     
- private static void showLoginForm() {
+ private static void LoginForm() {
         JFrame frame = new JFrame("Login Page");
         frame.setSize(300, 200);
         frame.setLocationRelativeTo(null);        
@@ -38,7 +38,7 @@ public class MahasiswaApp {
             if (username.equals("123230109") && password.equals("ifkelasg")) {
                 JOptionPane.showMessageDialog(frame, "Login Berhasil!");
                 frame.dispose();
-                showLandingPage();
+                LandingPage();
             } else {
                 JOptionPane.showMessageDialog(frame, "Login Gagal!", "Error", JOptionPane.ERROR_MESSAGE);
             }
@@ -47,7 +47,7 @@ public class MahasiswaApp {
         frame.setVisible(true);
     }
     
-    private static void showLandingPage() {
+    private static void LandingPage() {
         JFrame frame = new JFrame("Halaman Input Nilai");
         frame.setLocationRelativeTo(null);        
         frame.setAlwaysOnTop(false);
@@ -122,7 +122,7 @@ public class MahasiswaApp {
             int confirm = JOptionPane.showConfirmDialog(frame, "Apakah Anda yakin ingin logout?", "Konfirmasi", JOptionPane.YES_NO_OPTION);
             if (confirm == JOptionPane.YES_OPTION) {
                 frame.dispose();
-                showLoginForm();
+                LoginForm();
             }
         });
         
