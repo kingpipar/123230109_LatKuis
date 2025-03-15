@@ -84,7 +84,7 @@ public class MahasiswaApp {
         frame.add(tugasField);
         frame.add(kuisLabel);
         frame.add(kuisField);
-        frame.add(new JLabel("Kelas:"));
+        frame.add(new JLabel("Tipe Kelas:"));
         frame.add(teoriButton);
         frame.add(new JLabel());
         frame.add(praktikumButton);
@@ -104,7 +104,7 @@ public class MahasiswaApp {
                 
                 double totalNilai = kelas.equals("Teori") ? (0.3 * nilaiTugas) + (0.7 * nilaiKuis) : (0.7 * nilaiTugas) + (0.3 * nilaiKuis);
                 
-                String hasil = (totalNilai > 85) ? "PASS" : "NOT PASS";
+                String hasil = (totalNilai >= 85) ? "PASS" : "NOT PASS";
                 
                 JOptionPane.showMessageDialog(frame,
                         "Nama: " + nama + 
