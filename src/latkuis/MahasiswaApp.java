@@ -15,20 +15,14 @@ public class MahasiswaApp {
         frame.setSize(2200, 2200);
         frame.setLocationRelativeTo(null);        
         frame.setAlwaysOnTop(false);
-        frame.setLayout(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-//        frame.setLayout(new GridLayout(3, 2, 5, 5));
+        frame.setLayout(new GridLayout(3, 2, 5, 5));
         
         JLabel userLabel = new JLabel("Username:");
-        userLabel.setBounds(30, 30, 80, 25);
         JTextField userField = new JTextField();
-        userField.setBounds(150, 80, 180, 30);
         JLabel passLabel = new JLabel("Password:");
-        passLabel.setBounds(120, 30, 150, 25);
         JPasswordField passField = new JPasswordField();
-        passField.setBounds(150, 80, 180, 30);
         JButton loginButton = new JButton("Login");
-        loginButton.setBounds(100, 20, 200, 30);
         
         frame.add(userLabel);
         frame.add(userField);
