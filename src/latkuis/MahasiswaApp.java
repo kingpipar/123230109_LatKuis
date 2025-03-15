@@ -2,7 +2,7 @@ package latkuis;
 
 import javax.swing.*;
 import java.awt.*;
-//import java.awt.event.*;
+import java.awt.event.*;
 
 
 public class MahasiswaApp {
@@ -12,7 +12,7 @@ public class MahasiswaApp {
     
  private static void showLoginForm() {
         JFrame frame = new JFrame("Login Page");
-        frame.setSize(2200, 2200);
+        frame.setSize(300, 200);
         frame.setLocationRelativeTo(null);        
         frame.setAlwaysOnTop(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
